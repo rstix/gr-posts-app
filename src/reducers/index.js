@@ -1,8 +1,10 @@
 import { combineReducers } from "redux";
-import postsReducers from "./postsReducers";
+import postsReducer from "./postsReducer";
+import usersReducer from "./usersReducer";
 
 export default combineReducers({
-  posts: postsReducers
+  posts: postsReducer,
+  users: usersReducer
   // dummy reducer to make it woork, to do not get errors
   //dummy: () => "dummy"
 });
